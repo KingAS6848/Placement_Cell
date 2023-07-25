@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // URL used to connect with MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/Placement_Cell');
+mongoose.connect('mongodb+srv://as684844:abhi2000@placementstore.f2xabqv.mongodb.net/?retryWrites=true&w=majority');
 
 
 const db = mongoose.connection;
