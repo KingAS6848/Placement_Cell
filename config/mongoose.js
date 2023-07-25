@@ -1,8 +1,9 @@
 // Require mongoose for Database
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // URL used to connect with MongoDB
-mongoose.connect('mongodb+srv://as684844:abhi2000@placementstore.f2xabqv.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(process.env.DATABASE);
 
 
 const db = mongoose.connection;
